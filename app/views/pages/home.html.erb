@@ -1,7 +1,7 @@
 <div class="jumbotron">
   <h1 style="text-align: center">SafeChat</h1>
   <div class="well" id="chatbox" style="height: 250px; width: 50%; margin: 0 auto; border: solid 1px black; overflow-y: scroll;">
-    <%= @messages.each do |message| %>
+    <% @messages.each do |message| %>
       <%= render 'messages/message', message: message %>
     <% end %>  
   </div>
